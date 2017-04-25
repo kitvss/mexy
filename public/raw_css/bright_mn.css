@@ -1,0 +1,59 @@
+*{
+color: #000;
+}
+.page_background{
+background-image: url(https://pp.vk.me/c629300/v629300424/1de7b/mXx4o92Djj4.jpg);
+}
+.menu{
+background: rgba(255, 255, 255, 0.72);
+}
+#my_back_line{
+background-color: rgb(255, 238, 86);
+}
+.b{
+background-color: rgb(35, 100, 183);
+}
+.b:hover{
+background-color: rgb(76, 147, 237);
+}
+.b:active{
+background-color: rgb(13, 63, 126);
+}
+.body{
+background-color: rgba(201, 201, 201, 0.23);
+}
+.block{
+background-color: rgba(255, 77, 0, 0.67);
+}
+.chat::-webkit-scrollbar-thumb,.menu::-webkit-scrollbar-thumb{
+background-color: #003558;
+}
+.head>div{
+    background: rgba(48, 38, 35, 0.41);
+}
+.menu_lines{
+background: white;
+}
+.menu_home_b>a{
+color: white;
+}
+.profile_line {
+background-color: rgba(255, 255, 255, 0.5);
+}
+.l, .l a,.mdate,.mtime,.m_sender_name{
+color: white;
+}
+.lright .block{
+background-color: rgba(62, 0, 173, 0.65);
+}
+.lseen_div{
+color: white;
+}
+.back_line{
+background-color: rgba(255, 255, 255, 0.7);
+}
+
+.m_unread{
+    background: #E9E9E9;
+    border: 1px solid #000705;
+}

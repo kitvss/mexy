@@ -1,0 +1,82 @@
+*{
+color: #2A2A2A;
+}
+.page_background{
+background-color: #DFDFDF;
+}
+.menu{
+background: rgba(233, 233, 233, 0.5);
+}
+#my_back_line{
+background-color: rgba(255, 255, 255, 0.93);
+}
+.interlocutor_name {
+color: #323232;
+}
+.is_interlocutor_online {
+color: inherit;
+}
+.b{
+	background-color: #3b4645;
+}
+.b:hover{
+	background-color: #468a82;
+}
+.b:active{
+	background-color: rgb(0, 95, 84);
+}
+.body{
+background-color: whitesmoke;
+}
+.block{
+	background-color: #464646;
+	border-radius: 8px;
+	color: #F8F8F8;
+}
+.block a{
+color: whitesmoke;
+}
+.chat::-webkit-scrollbar-thumb,.menu::-webkit-scrollbar-thumb{
+background-color: #373737;
+}
+.inlb{
+color: #2E2E2E;
+}
+.inp{
+color: #333;
+}
+.menu_a{
+color: #535353;
+}
+.menu_a:hover {
+background-color: #A3A3A3;
+}
+.menu_a:active {
+background-color: #323232;
+}
+.profile_line {
+background: none;
+}
+.post{
+background: #FFFFFF;
+}
+.back_line{
+background-color: rgba(239, 239, 239, 0.8);
+}
+.here {
+background-color: #CBCBCB;
+color: #0D4483;
+}
+.menu_lines{
+background: #3F3F3F;
+}
+.l{
+color: #D8D8D8;
+}
+.lright .block{
+    background-color: #ffe510;
+    color: #232323;
+}
+.who_typing{
+background: white;
+}

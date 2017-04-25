@@ -1,0 +1,26 @@
+{
+  "name": "MEXY.PRO",
+  "main": "start.js",
+  "author": "Oleksii Shnyra",
+  "scripts": {
+    "devmin": "supervisor -w src/js -i public --no-restart-on exit requires/minify_cli",
+    "start": "node --use_strict start.js",
+    "nohup": "nohup npm start > /dev/null &"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "cloudinary": "^1.4.6",
+    "compression": "^1.6.1",
+    "easyimage": "^2.1.0",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "jsonwebtoken": "^5.5.4",
+    "mongoose": "^4.6.8",
+    "nodemailer": "^2.1.0",
+    "socket.io": "^1.4.5"
+  },
+  "devDependencies": {
+    "node-minify": "^1.3.9",
+    "babel-preset-es2015": "^6.6.0"
+  }
+}

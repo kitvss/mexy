@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>MEXY.PRO</title>
+<meta http-equiv="cache-control" content="public">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<meta name="theme-color" content="#082D45">
+<meta name="msapplication-navbutton-color" content="#082D45">
+<meta name="apple-mobile-web-app-status-bar-style" content="#082D45">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="shortcut icon" href="/img/favicon.png" id="favicon">
+<link href="/img/apple-icon.png" rel="apple-touch-icon" sizes="180x180">
+<link href="/img/android-icon.png" rel="icon" sizes="192x192">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/<%= typeof local!='undefined'&&local?'raw_':''; %>css/all_mn.css<%= typeof version!='undefined'?'?v='+version:''; %>">
+</head>
+<body>
+<script src="https://uabro.github.io/domcom-min.js"></script>
+<script src="/js/socket.io.min.js"></script>
+<% if(typeof version!='undefined') { %>
+<script>
+var App_version = "<%= version %>";
+</script>
+<% } %>
+<% if(typeof restore_data!='undefined') { %>
+<script>
+var restore_email = "<%= restore_data.email %>";
+var restore_key = "<%= restore_data.key %>";
+</script>
+<% } %>
+<script src="/js/<%= typeof local!='undefined'&&local?'dev.js':'mn.js'; %><%= typeof version!='undefined'?'?v='+version:''; %>"></script>
+<div class="page_background"></div>
+<div class="head"></div>
+<div id="loading"><div>Loading...</div></div>
+<div id="loading_back"></div>
+<img src="/img/logo.png" style="display:none;" width="0" height="0">

@@ -1,0 +1,65 @@
+*{
+color: #DADADA;
+}
+.page_background{
+background-image: url(https://pp.vk.me/c633129/v633129424/5c6d/d-FYZaC0Cww.jpg);
+background-color: #333;
+}
+.menu{
+background: rgba(118, 118, 118, 0.5);
+}
+#my_back_line{
+background-color: rgba(85, 36, 134, 0.79);
+}
+.b{
+background-color: rgba(40, 62, 90, 0.7);
+}
+.b:hover{
+background-color: #909CAB;
+}
+.b:active{
+background-color: #25374E;
+}
+.body{
+background-color: rgba(0, 0, 0, 0.4);
+}
+.block{
+background-color: rgba(0, 51, 92, 0.7);
+color: #EEEEEE;
+}
+.chat::-webkit-scrollbar-thumb,.menu::-webkit-scrollbar-thumb{
+background-color: black;
+}
+.inlb{
+color: white;
+}
+.inp{
+color: #333;
+}
+.menu_lines{
+background: #D7D7D7;
+}
+.l{
+color: #D8D8D8;
+}
+.lright .block{
+background-color: rgba(7, 102, 60, 0.7);
+}
+.menu_a{
+color: #A2A8AF;
+}
+.back_line{
+background-color: rgba(0, 0, 0, 0.62);
+}
+.here{
+background-color: #CBCBCB;
+color: #0D4483;
+}
+.who_typing{
+background: white;
+}
+
+.m_unread{
+    background: #CDD9DA;
+    border: 1px solid #37323B;
+}
