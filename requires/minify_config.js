@@ -1,52 +1,47 @@
-var mn_components = [
-  'src/js/mn-head.js',
-  'src/js/mn-routes.js',
-  'src/js/mn-functions.js',
-];
-mn_components = mn_components.concat([
-  // dc stuff here
-  'src/js/dcs/loading.js',
-  'src/js/dcs/logo_canvas.js',
-  'src/js/dcs/head.js',
-  'src/js/dcs/head_intl.js',
-  'src/js/dcs/logout.js',
-  'src/js/dcs/menu.js',
-  'src/js/dcs/context.js',
-  'src/js/dcs/log.js',
-  'src/js/dcs/app_short_descr.js',
-  'src/js/dcs/chat.js',
-  // login route
-  'src/js/dcs/login/index.js',
-  'src/js/dcs/login/restore.js',
-  'src/js/dcs/login/sign_in.js',
-  'src/js/dcs/login/sign_up.js',
-  'src/js/dcs/login/end.js',
-  // contacts route
-  'src/js/dcs/contacts/index.js',
-  'src/js/dcs/contacts/search.js',
-  'src/js/dcs/contacts/friends.js',
-  'src/js/dcs/contacts/end.js',
-  // im route
-  'src/js/dcs/im/index.js',
-  'src/js/dcs/im/list.js',
-  'src/js/dcs/im/end.js',
-  // sc route
-  'src/js/dcs/sc/index.js',
-  'src/js/dcs/sc/friends.js',
-  'src/js/dcs/sc/end.js',
-  // settings route
-  'src/js/dcs/settings/index.js',
-  'src/js/dcs/settings/themes.js',
-  'src/js/dcs/settings/profile_photo.js',
-  'src/js/dcs/settings/end.js',
-  // about route
-  'src/js/dcs/about/index.js',
-]);
-mn_components = mn_components.concat([
-  'src/js/mn-events.js',
-  'src/js/mn-socket.js',
-  'src/js/mn-end.js'
-]);
 module.exports = {
-  mn_components: mn_components
-}
+  mn_components: [
+    'frontend/js/mn-head.js',
+    'frontend/js/mn-routes.js',
+    'frontend/js/mn-functions.js',
+    // dc stuff here
+    'frontend/js/dcs/loading.js',
+    'frontend/js/dcs/logo_canvas.js',
+    'frontend/js/dcs/head.js',
+    'frontend/js/dcs/head_intl.js',
+    'frontend/js/dcs/logout.js',
+    'frontend/js/dcs/menu.js',
+    'frontend/js/dcs/context.js',
+    'frontend/js/dcs/log.js',
+    'frontend/js/dcs/app_short_descr.js',
+    'frontend/js/dcs/chat.js',
+    // login route
+    'frontend/js/dcs/login/index.js',
+    'frontend/js/dcs/login/restore.js',
+    'frontend/js/dcs/login/sign_in.js',
+    'frontend/js/dcs/login/sign_up.js',
+    'frontend/js/dcs/login/end.js',
+    // contacts route
+    'frontend/js/dcs/contacts/index.js',
+    'frontend/js/dcs/contacts/search.js',
+    'frontend/js/dcs/contacts/friends.js',
+    'frontend/js/dcs/contacts/end.js',
+    // im route
+    'frontend/js/dcs/im/index.js',
+    'frontend/js/dcs/im/list.js',
+    'frontend/js/dcs/im/end.js',
+    // sc route
+    'frontend/js/dcs/sc/index.js',
+    'frontend/js/dcs/sc/friends.js',
+    'frontend/js/dcs/sc/end.js',
+    // settings route
+    'frontend/js/dcs/settings/index.js',
+    'frontend/js/dcs/settings/themes.js',
+    'frontend/js/dcs/settings/profile_photo.js',
+    'frontend/js/dcs/settings/end.js',
+    // about route
+    'frontend/js/dcs/about/index.js',
+    'frontend/js/mn-events.js',
+    'frontend/js/mn-socket.js',
+    'frontend/js/mn-end.js'
+  ]
+};
