@@ -1,4 +1,4 @@
 // place your real configuration out of repository
-const config = require('../config');
+const config = require('../data/config-backend');
 
 module.exports = config;

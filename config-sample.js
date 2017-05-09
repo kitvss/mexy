@@ -1,23 +1,26 @@
 // for localhost settings
-var islocal = true,
+let isLocal = true,
   port = 8778,
   host = 'localhost';
 // for website settings
 if (process.env.OPENSHIFT_NODEJS_IP) {
   port = process.env.OPENSHIFT_NODEJS_PORT;
   host = process.env.OPENSHIFT_NODEJS_IP;
-  islocal = false;
+  isLocal = false;
 }
 
+const host_url = 'http' + (isLocal ? '' : 's') + '://' + `${host}:${port}`;
+
 module.exports = {
-  'islocal': islocal,
+  "isLocal": isLocal,
   'port': port,
   'host': host,
+  'host_url': host_url,
   'token_secret': 'secret-secret-secret',
   'serverSalt': 'salt-secret',
   db: {
-    name: islocal ? 'mexy-local' : 'mexy',
-    url: islocal ? 'localhost/' : process.env.OPENSHIFT_MONGODB_DB_URL,
+    name: isLocal ? 'mexy-local' : 'mexy',
+    url: isLocal ? 'localhost/' : process.env.OPENSHIFT_MONGODB_DB_URL,
   },
   'mailing': {
     service: 'Mailgun',
@@ -30,5 +33,4 @@ module.exports = {
     api_key: '111222112121212',
     api_secret: 'secret-secret-secret'
   }
-
 };

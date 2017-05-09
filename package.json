@@ -10,13 +10,13 @@
   "author": "Oleksii Shnyra",
   "main": "start.js",
   "scripts": {
-    "devmin": "supervisor -w frontend/js -i public -n exit requires/minify_dev",
+    "devmin": "supervisor -w frontend/src -i frontend/public -n exit frontend/helpers/minify_dev",
     "start": "node --use_strict start.js",
     "nohup": "nohup npm start > /dev/null &",
     "babel-node": "babel-node index",
     "nodemon": "nodemon --exec npm run babel-node",
-    "build_css": "babel-node requires/minify -css",
-    "build_js": "babel-node requires/minify -js"
+    "build_css": "babel-node frontend/helpers/minify -css",
+    "build_js": "babel-node frontend/helpers/minify -js"
   },
   "dependencies": {
     "body-parser": "^1.14.2",
