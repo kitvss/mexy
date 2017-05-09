@@ -4,7 +4,7 @@ const cluster = require('cluster'),
         'SIGBUS', 'SIGFPE', 'SIGUSR1', 'SIGSEGV', 'SIGUSR2', 'SIGTERM'
       ];
 
-var production;
+let production;
 if(process.env.NODE_ENV){
   production = process.env.NODE_ENV == 'production';
 }else{
@@ -13,7 +13,7 @@ if(process.env.NODE_ENV){
 
 let stopping = false;
 
-console.log('production',production)
+console.log('production',production);
 
 cluster.on('disconnect', function(worker) {
   if (production) {

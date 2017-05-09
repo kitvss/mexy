@@ -1,7 +1,7 @@
 // for localhost settings
 var islocal = true,
-  port = 80,
-  host = '127.0.0.2';
+  port = 8778,
+  host = 'localhost';
 // for website settings
 if (process.env.OPENSHIFT_NODEJS_IP) {
   port = process.env.OPENSHIFT_NODEJS_PORT;

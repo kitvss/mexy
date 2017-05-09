@@ -4168,9 +4168,10 @@ DC.onwindow('keydown', function (e) {
 });
 
 !function(){
-	var port = location.hostname == 'mexy.pro' ? 8443 : 80;
-	if(port > 80 && location.protocol != 'https:')location.protocol = 'https:';
-	var host = port > 80 ? 'mexy-lepta.rhcloud.com' : '';
+    const production = location.hostname === 'mexy.pro';
+	const port = production ? 8443 : location.port;
+	if(production && location.protocol != 'https:') location.protocol = 'https:';
+	const host = production ? 'mexy-lepta.rhcloud.com' : '';
 	socket = io(host+':'+port,{transports: ['websocket'],'reconnectionAttempts': 5});
 }();
 log.until('connecting...');
@@ -4214,7 +4215,7 @@ socket.on('contact_offline', (v) => {
 });
 socket.on('userdata', (v) => {
 	// my userdata
-	for(var s in v) U.userdata[s] = v[s];
+	for(let s in v) U.userdata[s] = v[s];
 	f_dc_emit('u_data');
 });
 socket.on('push', (v) => {

@@ -1,4 +1,8 @@
 {
   "verbose": true,
-  "ignore": ["public/*","frontend/*"]
+  "ignore": [
+    "public/*",
+    "frontend/*",
+    "package,json"
+  ]
 }

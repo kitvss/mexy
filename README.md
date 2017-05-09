@@ -34,14 +34,19 @@ npm i nodemon -g
 
 # for development
 npm i supervisor -g
+npm i less -g
 ```
 
 3) Install `MongoDB`
 > https://docs.mongodb.com/manual/administration/install-community/
 
-4) Start `NodeJs` server with `nodemon`
+4) Start server
 
 ```bash
+# if database not running, start it
+mongod
+
+# then, nodeJs
 nodemon
 ```
 
@@ -50,8 +55,8 @@ And you should see something like this
 ```bash
 Functions API ready
 db_api ready
-Server running at http://127.0.0.2:80
-Server also running at http://192.168.56.1:80
+Server running at http://192.168.0.101:8778
+Server running at http://localhost:8778
 ```
 
 Open your browser at indicated URL and let's develop Mexy!
