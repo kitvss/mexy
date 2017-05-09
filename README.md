@@ -36,10 +36,10 @@ mkdir data
 ```
 
 > now you should have similar directory structure
-> - .../mexy-project/
->  - data/
->  - mexy-backend/
->  - mexy-frontend/
+> - mexy-project/
+>   - data/
+>   - mexy-backend/
+>   - mexy-frontend/
 
 2) Setup configuration (see `config.js` and `config-sample.js` files).
 
